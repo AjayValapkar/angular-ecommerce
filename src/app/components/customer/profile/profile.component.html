@@ -1,0 +1,40 @@
+<div class="userprofile">
+    <div class="row">
+        <div class="col-sm-12">
+            <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">...</button>
+
+
+            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+                aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                </div>
+
+
+                <ul class="list-group">
+                    <li class="user-nav">
+                        <a class="user-item" *ngIf="user">
+                            Welcome <br>
+{{user.email}}
+                        </a>
+                    </li>
+                    <li class="user-nav">
+                        <div routerLink="api/customer/login" id="usericon" class="fas fa-user"></div> <a routerLink="/dashboard/blogprofile" routerLinkActive="active" class="user-item">My Account</a>
+                       <br>
+
+                        <ul class="list-group">
+                            <li class="account-nav" routerLink="/api/customer/account">Personal Information</li>
+                            <li class="account-nav" routerLink="address">Manage Address</li>
+                            <li class="account-nav" routerLink="order">My Orders</li>
+                            <li class="account-nav" routerLink="cart">My Cart</li>
+                            <li class="account-nav">Logout</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

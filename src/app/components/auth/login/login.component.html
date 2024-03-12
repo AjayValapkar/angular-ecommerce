@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="title">
+        <h1>Sign In</h1>
+    </div>
+    <form>
+        <input type="email" [(ngModel)]="customer.email" [ngModelOptions]="{standalone: true}" class="form-control"
+            id="email" placeholder="Email" required>
+        <input type="text" [(ngModel)]="customer.password" [ngModelOptions]="{standalone: true}" class="form-control"
+            id="password" placeholder="Password" required>
+        <div><a>Forgot Password</a></div>
+        <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+
+
+    </form>
+    <div class="signup">Don't have an account ? <a routerLink="/api/customer/register"> Sign Up here</a></div>
+</div>

@@ -1,0 +1,82 @@
+
+:host {
+    /* font-family: 'Poppins' sans-serif;  */
+    font-family: Kaisei ToKumin;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background:#89abbd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.header .logo{
+    font-size: 1.5rem;
+    font-weight:  bolder;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+
+}
+.nav-serach{
+    display: flex;
+    flex-direction: row;
+}
+.nav-serach input{
+    padding: 3%;
+    width: 220px;
+    overflow: visible;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.nav-serach .fas{
+    margin-left: -10%;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 1.4rem;
+    padding: 3%;
+    background-color: #ffd600;
+    font-weight: 600;
+}
+.header .logo .i{
+    color: #222;
+    padding-right: .5rem;
+
+}
+.header .Navbar a{
+    font-size: 20px;
+    color: #000000;
+    margin: 0 3rem;
+    text-decoration: none;
+}
+
+.header .Navbar a:hover{
+    color: #ffffff;
+
+}
+.header .icons div{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #000;
+    
+}
+
+.header .icons div:hover{
+    color: #fff;
+}

@@ -1,0 +1,13 @@
+.row{
+    width: 90%;
+    margin: 4% auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.dash{
+    background-color: #fbfdff;
+}
+.col-sm-9{
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
